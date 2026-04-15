@@ -1,11 +1,14 @@
 /*Corpo*/
 body{
-    background-color: rgb(14, 22, 94);
+    background-color: rgb(255, 255, 255);
      margin: 0; 
      font-family: Arial, sans-serif;
+       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZCUjKGEZSKJWaepE12kk3Sn0Q17PL1HljA&s');
+       background-size: cover;
+       background-repeat: no-repeat;
 }
 nav{
- background-color: rgb(5, 10, 82);
+ background-color: rgb(255, 242, 64);
  color: rgb(255, 255, 255);
 }
 nav ul {
@@ -19,10 +22,12 @@ nav a {
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
-    color: white;
+    color: rgb(15, 15, 15);
+    font-family: monospace;
+    font-size: 25px;
 }
 nav a:hover {
-    background-color: rgb(32, 41, 122);
+    background-color: rgb(231, 216, 1);
 }
 
 
@@ -43,12 +48,24 @@ section img{
 
 /*Home*/
 .home h1{
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
+    background: fixed;
+    background-color: rgb(53, 17, 17);
+    border: 1px solid white;
+    font-family: cursive;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    width: 50%;
+    height: auto;
+    margin: auto;
 }
 .home p{
-    color: white;
+    color: rgb(0, 0, 0);
+    background-color: white;
     text-align: center;
+    font-family: serif;
     font-size: 25px;
     outline-style: double;
     outline-width: 5px;
@@ -56,12 +73,13 @@ section img{
 }
 
 .home img {
+    align-items: center;
     display: block;
     margin: 20px auto;
     max-width: 100%;
     height: auto;
-    outline-style: solid;
-    outline-color: yellow;
+    border-radius: 10px;
+
 }
 .home {
     padding: 20px;
