@@ -1,0 +1,52 @@
+/*Corpo*/
+body{
+    background-color: rgb(14, 22, 94);
+     margin: 0; 
+     font-family: Arial, sans-serif;
+}
+nav{
+ background-color: rgb(5, 10, 82);
+ color: rgb(255, 255, 255);
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    display: block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    background-color: rgb(32, 41, 122);
+}
+
+
+section img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.container-lado-a-lado {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}
+.container-lado-a-lado iframe {
+    border: none;
+}
+/*Currículo*/
+.Curri h1{
+    color: white;
+    text-align: center;
+    background-color: royalblue;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+}
