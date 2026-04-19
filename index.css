@@ -9,7 +9,8 @@ body{
 }
 nav{
  background-color: rgb(255, 242, 64);
- color: rgb(255, 255, 255);
+ color: rgb(255, 255, 255); 
+  green, blue);
 }
 nav ul {
     margin: 0;
@@ -23,11 +24,14 @@ nav a {
     padding: 1rem 2rem;
     text-decoration: none;
     color: rgb(15, 15, 15);
-    font-family: monospace;
+ 
     font-size: 25px;
 }
+
 nav a:hover {
     background-color: rgb(231, 216, 1);
+   
+    
 }
 
 
@@ -48,7 +52,7 @@ section img{
 
 /*Home*/
 .home h1{
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-align: center;
     background: fixed;
     background-color: rgb(53, 17, 17);
@@ -79,8 +83,25 @@ section img{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    outline-style: groove;
+    outline-color: darkblue;
 
 }
+/*animar a imagem*/
+.age {
+  width: 300px;
+  animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-20px) scale(1.05); /* Sobe e aumenta */
+  }
+}
+
 .home {
     padding: 20px;
 }
