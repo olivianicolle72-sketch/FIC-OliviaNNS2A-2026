@@ -6,7 +6,12 @@ body{
       background-image: url('https://habereksprescomtr.teimg.com/crop/1280x720/haberekspres-com-tr/uploads/2024/12/cartoon-network.png'); background-size: cover;
        background-repeat: no-repeat;
 }
-
+@font-face {
+    font-family: 'Starstruck.ttf';
+    src: url('Starstruck.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 
 nav{
  background-color: rgb(35, 19, 56);
