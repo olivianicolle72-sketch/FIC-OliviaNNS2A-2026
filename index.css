@@ -3,7 +3,7 @@ body{
     background-color: rgb(255, 255, 255);
      margin: 0; 
      font-family: 'Starstruck.ttf';
-       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZCUjKGEZSKJWaepE12kk3Sn0Q17PL1HljA&s');
+       background-image: url('https://img.odcdn.com.br/wp-content/uploads/2023/12/lua-fria-e1704461970547.jpg');
        background-size: cover;
        background-repeat: no-repeat;
 }
@@ -16,7 +16,7 @@ body{
 
 
 nav{
- background-color: rgb(255, 242, 64);
+ background-color: rgb(3, 13, 71);
  color: rgb(255, 255, 255)( green, blue);
 }
 
@@ -31,13 +31,13 @@ nav a {
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
-    color: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
  
     font-size: 25px;
 }
 
 nav a:hover {
-    background-color: rgb(231, 216, 1);
+    background-color: rgb(2, 13, 112);
    
     
 }
@@ -63,7 +63,7 @@ section img{
     color: #fff;
     text-align: center;
     background: fixed;
-    background-color: rgb(53, 17, 17);
+    background-color: rgb(7, 12, 43);
     border: 1px solid white;
     font-family: cursive;
     padding: 10px;
