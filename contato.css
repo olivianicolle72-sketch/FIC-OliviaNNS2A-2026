@@ -2,11 +2,18 @@
 body{
     background-color: rgb(128, 138, 223);
      margin: 0; 
-     font-family: Arial, sans-serif;
        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZCUjKGEZSKJWaepE12kk3Sn0Q17PL1HljA&s');
        background-size: cover;
        background-repeat: no-repeat;
 }
+@font-face {
+    font-family: 'Starstruck.ttf'; /* O nome que você vai usar no CSS */
+    src: url('Starstruck.ttf') format('truetype'); /* Caminho relativo à fonte */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 nav{
  background-color: rgb(255, 242, 64);
  color: rgb(255, 255, 255);
@@ -22,8 +29,8 @@ nav a {
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
+    font-family: 'Starstruck.ttf';
     color: rgb(15, 15, 15);
-    font-family: monospace;
     font-size: 25px;
 }
 nav a:hover {

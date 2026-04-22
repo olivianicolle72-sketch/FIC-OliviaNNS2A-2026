@@ -2,16 +2,24 @@
 body{
     background-color: rgb(255, 255, 255);
      margin: 0; 
-     font-family: Arial, sans-serif;
+     font-family: 'Starstruck.ttf';
        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZCUjKGEZSKJWaepE12kk3Sn0Q17PL1HljA&s');
        background-size: cover;
        background-repeat: no-repeat;
 }
+@font-face {
+    font-family: 'Starstruck.ttf';
+    src: url('Starstruck.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 nav{
  background-color: rgb(255, 242, 64);
- color: rgb(255, 255, 255); 
-  green, blue);
+ color: rgb(255, 255, 255)( green, blue);
 }
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -126,6 +134,3 @@ section img{
         flex-direction: column;
     }
 }
-
-
-
