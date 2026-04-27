@@ -1,11 +1,19 @@
 /*Corpo*/
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(128, 138, 223);
      margin: 0; 
      font-family: 'Starstruck.ttf';
-      background-image: url('https://habereksprescomtr.teimg.com/crop/1280x720/haberekspres-com-tr/uploads/2024/12/cartoon-network.png'); background-size: cover;
+       background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230929/pngtree-purple-flowers-growing-in-a-garden-image_13328939.jpg');
+       background-size: cover;
        background-repeat: no-repeat;
 }
+@font-face {
+    font-family: 'Starstruck.ttf'; 
+    src: url('Starstruck.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 nav{
  background-color: rgb(35, 19, 56);
  color: rgb(255, 255, 255);
@@ -27,12 +35,11 @@ nav a {
 }
 nav a:hover {
     background-color: rgb(73, 43, 129)
-    
 }
 /*Fontes*/
 @font-face {
-    font-family: 'Starstruck.ttf'; 
-    src: url('/Starstruck.ttf') format('truetype'); 
+    font-family: 'Star'; 
+    src: url('Starstruck.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -115,7 +122,7 @@ nav a:hover {
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 3px solid #5c4fd1; /* Um detalhe de borda para destaque */
+  border: 3px solid #5c4fd1; 
 }
 
 .balao {
@@ -125,7 +132,7 @@ nav a:hover {
   padding: 15px;
   font-weight: bold;
   color: white;
-  white-space: nowrap; /* Mantém "Meus Objetivos" em uma linha */
+  white-space: nowrap; 
 }
 
 .balao::after {
@@ -165,11 +172,12 @@ nav a:hover {
     aspect-ratio: 16 / 9; 
     border: none;
 }
+
 .pt img {
      width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px dashed rgb(31, 4, 104);       /* Borda branca */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */ 
+  border: 4px dashed rgb(31, 4, 104);       
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
 }

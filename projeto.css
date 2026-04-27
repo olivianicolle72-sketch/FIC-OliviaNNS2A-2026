@@ -1,21 +1,21 @@
 /*Corpo*/
 body{
-    background-color: rgb(128, 138, 223);
+    background-color: rgb(255, 255, 255);
      margin: 0; 
      font-family: 'Starstruck.ttf';
-       background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ZCUjKGEZSKJWaepE12kk3Sn0Q17PL1HljA&s');
+       background-image: url('https://wallpapers.com/images/high/beautiful-minecraft-cherry-blossoms-8zlaxmeiqm93j24f.jpg');
        background-size: cover;
        background-repeat: no-repeat;
 }
 @font-face {
-    font-family: 'Starstruck.ttf'; /* O nome que você vai usar no CSS */
-    src: url('Starstruck.ttf') format('truetype'); /* Caminho relativo à fonte */
+    font-family: 'Starstruck.ttf'; 
+    src: url('Starstruck.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
 
 nav{
- background-color: rgb(255, 242, 64);
+ background-color: rgb(233, 168, 241);
  color: rgb(255, 255, 255);
 }
 nav ul {
@@ -29,9 +29,9 @@ nav a {
     display: block;
     padding: 1rem 2rem;
     text-decoration: none;
-    color: rgb(15, 15, 15);
+    color: rgb(99, 58, 109);
     font-size: 25px;
 }
 nav a:hover {
-    background-color: rgb(231, 216, 1);
+    background-color: rgb(221, 147, 236);
 }
