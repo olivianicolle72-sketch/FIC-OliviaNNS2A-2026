@@ -42,38 +42,26 @@ nav a {
     padding: 1rem 2rem;
     text-decoration: none;
     font-family: 'Starstruck.ttf';
-    color: rgb(88, 88, 88);
+    color: rgb(0, 0, 0);
     font-size: 25px;
 }
 nav a:hover {
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(160, 160, 160);
 }
 
-
-section img{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-.container-lado-a-lado {
-    display: flex; 
-    align-items: center; 
-    gap: 20px;
-}
-.container-lado-a-lado iframe {
-    border: none;
-}
 /* Contato */
 .contato {
     text-align: center;
+    position: relative;
     padding: 40px;
-    background-color: #6b6d6e;
+    background-color: #3f3f3f;
     border-radius: 10px;
-    width: 60%;
-    margin: auto;
+    width: 30%;
+    margin: 80px auto 20px auto;
     color: white;
-    font-family: 'Impact.ttf';
+    font-family: 'Impact.ttf', sans-serif;
+    outline: 2px solid #ffffff;
+    outline-offset: -20px;
 }
 
 .btn-whatsapp {
@@ -88,7 +76,7 @@ section img{
 }
 
 .btn-whatsapp:hover {
-    background-color: #2e2e2e;
+    background-color: #8d8d8d;
     color: white;
 }
 
@@ -100,29 +88,7 @@ section img{
 img {
     border-radius: 10px;
 }
-.ame{
-    text-decoration: none;
-    color: inherit;
-}
-#AME{
-     background-color: #ffffff; 
-    color: rgb(255, 255, 255);             
-    padding: 15px 32px;     
-    border: none;              
-    border-radius: 8px;       
-    cursor: pointer;          
-    font-size: 16px;
-    transition: 0.3s; 
-    color: inherit rgb(255, 255, 255); 
-    text-emphasis: none;
-    text-align: center;
-      
-}
-#AME:hover{
-    background-color: #79828f;
-   
-   
-}
+
 /* CSS Do QR CODE */
 .animar-imagem {
   width: 200px;
