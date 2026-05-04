@@ -24,7 +24,12 @@ body{
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Impact.ttf';
+    src: url('Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 nav{
  background-color: rgb(255, 255, 255);

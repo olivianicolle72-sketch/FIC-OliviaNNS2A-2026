@@ -13,6 +13,12 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Impact.ttf';
+    src: url('Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 nav{
  background-color: rgb(233, 168, 241);
@@ -35,3 +41,133 @@ nav a {
 nav a:hover {
     background-color: rgb(221, 147, 236);
 }
+/*Projetos*/
+.Titulo{
+    color: white;
+    font-family: 'Impact.ttf';
+  background-color: rgba(255, 20, 147, 0.5);
+  border: 3px double white;
+  border-radius: 27px;
+  width: fit-content;
+  padding: 10px 20px;
+  display: block;     
+  margin: 10px auto;      
+  width: fit-content;
+  height: auto;
+  
+ 
+}
+
+.Titulo:hover{
+ background-color: rgba(255, 20, 147, 0.8);
+ color: black;
+ border: 4px double black;
+  cursor: pointer;
+}
+
+.p01{
+    color: rgb(0, 0, 0);
+    background-color: lightpink;
+    font-family: 'Impact.ttf';
+    font-size: 45px;
+    color: white;
+    
+    /* Estilo da borda/contorno */
+    outline-style: double;
+    outline-width: 5px;
+    outline-color: hotpink;
+
+    /* Formato Quadrado e Texto Justificado */
+    text-align: center;
+    width:  990px;       
+    height: 160px;     
+    padding: 5px;     
+    margin: 10px auto;  
+    font-size: 25PX;
+    overflow: hidden;   
+    display: flex;
+   align-items: center;
+}
+
+/*Segunda Barra*/
+ .sub-nav {
+        background-color: rgb(233, 168, 241);
+        border-bottom: 2px solid white;
+        padding: 0.5rem;
+        position: block; /* Fixa ao rolar */
+        top: 50px; /* Logo abaixo da principal */
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 999;
+    }
+
+    .sub-nav a {
+        font-family: 'Impact.ttf';
+        text-decoration: none;
+        color: rgb(99, 58, 109);
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+
+    .sub-nav a:hover {
+        background-color: violet;
+        border-radius: 4px;
+    }
+
+    /* Conteúdo */
+    section { height: 80vh; padding: 20px; border-bottom: 1px solid #ccc; font-family: 'Impact.ttf';}
+    
+    /*SECAO 1*/
+    #secao1 { background-color: darkviolet;
+    color: white;
+        text-align: center;
+        font-size: 15px;
+        .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #111;
+  width: 150px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.topo {
+  background: linear-gradient(90deg, #ff00cc, #ff0099);
+  padding: 10px;
+  border-radius: 15px 15px 0 0;
+  font-weight: bold;
+}
+
+.card img {
+  width: 70px;
+  margin: 20px 0;
+}
+
+.card button {
+  background: green;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background: darkgreen;
+}
+
+/*sECAO 2*/
+    }
+    #secao2 { background-color: #d1ecf1; }
+    
+    /*SECAO 3*/
+     #secao3 { background-color: #d1ecf1; }
