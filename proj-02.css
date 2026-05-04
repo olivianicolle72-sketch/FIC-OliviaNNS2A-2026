@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(255, 255, 255);
+     margin: 0; 
+     font-family: 'Starstruck.ttf';
+       background-image: url('https://wallpapers.com/images/high/beautiful-minecraft-cherry-blossoms-8zlaxmeiqm93j24f.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+}
+@font-face {
+    font-family: 'Starstruck.ttf'; 
+    src: url('Starstruck.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Impact.ttf';
+    src: url('Impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+script{
+    function calcular() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var operacao = document.getElementById("operacao").value;
+        var resultado;
+
+        switch (operacao) {
+            case "soma":
+                resultado = num1 + num2;
+                break;
+            case "subtracao":
+                resultado = num1 - num2;
+                break;
+            case "multiplicacao":
+                resultado = num1 * num2;
+                break;
+            case "divisao":
+                if (num2 !== 0) {
+                    resultado = num1 / num2;
+                } else {
+                    resultado = "Erro: Divisão por zero!";
+                }
+                break;
+            default:}
