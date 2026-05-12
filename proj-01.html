@@ -8,27 +8,13 @@
 <body>
 
   <h2>Verificação de Idade</h2>
+<script src="proj-01.js"></script>
+
 
   <label>Digite sua idade:</label>
   <input type="number" id="idade">
   <button onclick="verificarIdade()">Verificar</button>
-
   <p id="resultado"></p>
-
-  <script>
-    function verificarIdade() {
-      let idade = document.getElementById("idade").value;
-      let resultado = document.getElementById("resultado");
-
-      if (idade >= 18) {
-        resultado.textContent = "Você é maior de idade.";
-      } else if (idade > 0) {
-        resultado.textContent = "Você é menor de idade.";
-      } else {
-        resultado.textContent = "Digite uma idade válida.";
-      }
-    }
-  </script>
 
 </body>
 </html>
