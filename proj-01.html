@@ -7,38 +7,20 @@
 </head>
 <body>
 
- <div class="container">
-        <h2>Verificação de Idade</h2>
-        
-        <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite o nome completo">
-            
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" placeholder="Digite a idade">
-            
-            <button onclick="registrarIdade()">Registrar</button>
-        </div>
+    <h2> Lista de Cadastro</h2>
 
-        <h3>Registros</h3>
-        <div class="table-wrapper">
-            <table id="tabelaRegistros">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Idade</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                  <!--Registro-->
-                </tbody>
-            </table>
-        </div>
-        
-        <button class="btn-limpar" onclick="limparRegistros()">Limpar Tudo</button>
-    </div>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <input type="number" id="idade" placeholder="Digite sua idade">
 
-    <script src="proj-01.js"></script>
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="analisar()">Analisar</button>
+
+    <h2>Lista</h2>
+    <ul id="lista"></ul>
+
+    <h2 id="Resultado"></h2>
+
+     
+ <script src="proj-01.js"></script>
 </body>
 </html>

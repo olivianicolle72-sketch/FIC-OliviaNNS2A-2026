@@ -1,53 +1,51 @@
+let ListaPessoas = "Ana-15,Bruno-20,Carla-25,Diego-30";
+let nomes = ListaPessoas.split(",");
+let pessoas = [];
 
-   function registrarIdade() {
-    const inputNome = document.getElementById("nome");
-    const inputIdade = document.getElementById("idade");
-    const tabelaBody = document.querySelector("#tabelaRegistros tbody");
+function adicionar() {
+    let nome = document.getElementById("nome").value;
+    let idade = parseInt(document.getElementById("idade").value);
 
-    const nome = inputNome.value.trim();
-    const idadeTexto = inputIdade.value.trim();
-
-    // 1. Validação de campos vazios
-    if (nome === "" || idadeTexto === "") {
-        alert("Por favor, preencha todos os campos obrigatórios.");
+    if ( nome == "" || idade < 0) {
+        alert("Por favor, preencha os campos corretamente.");
         return;
     }
+  
+pessoas.push({ nome: nome, idade: idade });
 
-    // 2. NOVA VALIDAÇÃO: Impede números ou símbolos no nome
-    // Aceita apenas letras (incluindo acentos) e espaços
-    const apenasLetras = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
-    if (!apenasLetras.test(nome)) {
-        alert("O campo Nome deve conter apenas letras.");
-        return;
-    }
+let item = document.createElement("li");
+item.textContent = nome + " - " + idade + " anos";
+document.getElementById("lista").appendChild(item);
 
-    const idade = parseInt(idadeTexto, 10);
-
-    // 3. Validação do número da idade
-    if (isNaN(idade) || idade < 0 || idade > 130) {
-        alert("Por favor, insira uma idade válida (entre 0 e 130).");
-        return;
-    }
-
-    // Regra de maioridade
-    const ehMaior = idade >= 18;
-    const statusText = ehMaior ? "Maior de idade" : "Menor de idade";
-    const classeEstilo = ehMaior ? "status-maior" : "status-menor";
-
-    // Geração da linha na tabela
-    const novaLinha = document.createElement("tr");
-    novaLinha.className = classeEstilo;
-
-    novaLinha.innerHTML = `
-        <td>${nome}</td>
-        <td>${idade} anos</td>
-        <td><strong>${statusText}</strong></td>
-    `;
-
-    tabelaBody.appendChild(novaLinha);
-
-    // Limpeza de campos
-    inputNome.value = "";
-    inputIdade.value = "";
-    inputNome.focus();
+document.getElementById("nome").value = "";
+document.getElementById("idade").value = "";
 }
+function exibirNomes() {
+    nomes.forEach(function(nome) {
+        console.log("forEach1: " + nome);
+    });
+
+    nomes.forEach(function(nome) {
+        console.log("forEach2: " + nome);
+    });
+
+    for (let nome of nomes) {
+        console.log("for let: " + nome);
+    }
+}
+
+function Analisar() {
+   pessoas.sort(function(a, b) {
+        return a.idade - b.idade;
+    });
+
+let lista= document.getElementById("lista");
+lista.innerHTML = "";
+
+for (let i = 0; i < nomes.length; i++) {
+    let item = document.createElement("li");
+   item.innerText = pessoas[i].nome + " - " + pessoas[i].idade + " anos";
+    lista.appendChild(item);
+}
+}
+
