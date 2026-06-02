@@ -1,48 +1,28 @@
-let pessoas = [];
+function votar(){
+ let idade = parseInt(document.getElementById("idade").value);
 
-function adicionar() {
-    let nome = document.getElementById("nome").value;
-    let idade = parseInt(document.getElementById("idade").value);
+ switch (true){
+     case (idade < 16):
+        alert("Não pode votar!");
+        break;
 
-    
-    if (nome === "" || isNaN(idade) || idade < 0) {
-        alert("Por favor, preencha os campos corretamente.");
-        return;
-    }
-  
-    pessoas.push({ nome: nome, idade: idade });
+        case (idade => 16):
+            alert("Hora de votar!");
+            
+            let numero;
 
-    let item = document.createElement("li");
-    item.textContent = nome + " - " + idade + " anos";
-    document.getElementById("lista").appendChild(item);
+            do {
+                numero = parseInt(
+                    prompt("Digite o numero do candidato: ")
+                );
 
-    document.getElementById("nome").value = "";
-    document.getElementById("idade").value = "";
-}
-
-function exibirNomes() {
-  
-    pessoas.forEach(function(pessoa) {
-        console.log("forEach1: " + pessoa.nome);
-    });
-
-    pessoas.forEach(function(pessoa) {
-        console.log("forEach2: " + pessoa.nome);
-    });
-
-    for (let pessoa of pessoas) {
-        console.log("for let: " + pessoa.nome);
-    }
-}
-
-function analisar() {
-   
-    pessoas.sort((a, b) => {
-        if (a.nome !== b.nome) {
-            return a.nome.localeCompare(b.nome);
+                if(numero !== 80 ){
+                    alert("Numero incorreto!Digite novamente.");
+                }
+                while(numero !== 80);
+                    alert("Voto registrado com sucesso!");
+                    break;   
+            }
+ 
         }
-        return a.idade - b.idade;
-    });
-    
-    console.log("Lista ordenada:", pessoas);
-}
+    }
