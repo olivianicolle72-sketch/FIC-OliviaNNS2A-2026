@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(150, 41, 50);
+    color: rgb(255, 158, 158);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 55px;
+}
+
+button{
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}

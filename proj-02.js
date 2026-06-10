@@ -14,7 +14,7 @@
                 case "subtracao": resultado = num1 - num2; break;
                 case "multiplicacao": resultado = num1*num2; break;
                 case "divisao":
-                    resultado: num2 ==! 0 ? (num1/num2): "Não pode dividir por 0!"; 
+                    resultado: num2 ==! 0 ? (num1/num2): "Não pode dividir por 0!";
               }
               document.getElementById("resultado") = "Resultado: " + resultado;
         }
