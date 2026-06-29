@@ -61,9 +61,15 @@ botao.addEventListener("click", adicionarPessoa);
 botaoAnalisar.addEventListener("click", analisar);
 
 botaoCor.addEventListener("click", function () {
-    if (document.body.style.backgroundColor === "yellow") {
-        document.body.style.backgroundColor = "blue";
+
+    if (document.body.style.backgroundColor === "rgb(244, 166, 185)") {
+
+        document.body.style.backgroundColor = "#fffaf0";
+
     } else {
-        document.body.style.backgroundColor = "yellow";
+
+        document.body.style.backgroundColor = "#f4a6b9";
+
     }
+
 });
