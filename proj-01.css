@@ -1,6 +1,6 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf5f5; /* Fundo suave */
     display: flex;
     justify-content: center;
     padding-top: 50px;
@@ -8,32 +8,71 @@ body {
 
 #container {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(230, 160, 170, 0.2);
     width: 300px;
     text-align: center;
+    border-top: 6px solid #f4a6b9; /* Rosa morango */
+}
+
+h1 {
+    color: #5d4037; /* Chocolate */
+    font-size: 24px;
 }
 
 input {
     width: 90%;
-    padding: 10px;
+    padding: 12px;
     margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 2px solid #fce4ec;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #f4a6b9;
 }
 
 button {
     width: 95%;
     padding: 10px;
-    margin-top: 5px;
-    background-color: #333;
-    color: white;
+    margin-top: 8px;
+    background-color: #5d4037; /* Chocolate */
+    color: #fffaf0; /* Baunilha */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
+button:hover {
+    background-color: #8d6e63;
+}
+
+/* Estilo específico para o botão de cor */
+#botao02 {
+    background-color: #f4a6b9; /* Rosa destaque */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #fce4ec;
+    color: #5d4037;
+}
+
+li:last-child {
+    border-bottom: none;
+}
 button:hover {
     background-color: #555;
 }
